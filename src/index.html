@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/dist/output.css">
+  <link rel="shortcut icon" href="/src/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/src/favicon.ico" type="image/x-icon">
+  <meta name="theme-color" content="#ffffff">
+  <title>Babe - Furniture</title>
+</head>
+<body class="overflow-x-hidden">
+  <!-- Header: Start -->
+  <header class="relative container mx-auto p-3">
+    <div class="flex justify-between items-center">
+      <!-- Logo: Start -->
+      <div class="logo">
+        <img width="101" src="/src/design/logo1.svg" alt="Babe Furniture Adalah sebuah website yang menjual barang-barang kece"/>
+      </div>
+      <!-- Logo: End -->
+      
+      <!-- Humburger Icon: Start -->
+      <div class="w-auto md:hidden">
+        <button class="relative block hamburger w-12 h-12 md:hidden focus:outline-none" id="menu-btn">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <!-- Humburger Icon: End -->
+
+      <!-- Navbar: Start -->
+      <nav class="hidden md:flex">
+        <ul class="hidden md:flex md:flex-row justify-center items-center">
+          <li class="md:mx-6 py-6 md:py-0">
+            <a href="#home" class="font-normal hover:text-brown active:text-brown focus:text-brown text-2sm">Home</a>
+          </li>
+          <li class="md:mx-6 py-6 md:py-0">
+            <a href="#shop" class="font-normal hover:text-brown active:text-brown focus:text-brown text-2sm">Shop</a>
+          </li>
+          <li class="md:mx-6 py-6 md:py-0">
+            <a href="#about" class="font-normal hover:text-brown active:text-brown focus:text-brown text-2sm">About</a>
+          </li>
+          <li class="md:mx-6 py-6 md:py-0">
+            <a href="#rewards" class="font-normal hover:text-brown active:text-brown focus:text-brown text-2sm">Rewards</a>
+          </li>
+        </ul>  
+      </nav>
+      <!-- Navbar: End -->
+
+      <!-- Button Search & Cart: Start -->
+      <div class="w-auto hidden md:flex">
+        <ul class="hidden md:flex items-center">
+          <li>
+            <button class="mr-5">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.2167 24.4708L15.5458 16.8C14.9625 17.3055 14.2819 17.6993 13.5042 17.9812C12.7264 18.2632 11.9 18.4042 11.025 18.4042C8.925 18.4042 7.14583 17.675 5.6875 16.2167C4.22917 14.7583 3.5 12.9986 3.5 10.9375C3.5 8.87638 4.22917 7.11666 5.6875 5.65833C7.14583 4.19999 8.91528 3.47083 10.9958 3.47083C13.0569 3.47083 14.8118 4.19999 16.2604 5.65833C17.709 7.11666 18.4333 8.87638 18.4333 10.9375C18.4333 11.7736 18.2972 12.5805 18.025 13.3583C17.7528 14.1361 17.3444 14.8653 16.8 15.5458L24.5 23.1875L23.2167 24.4708ZM10.9958 16.6542C12.5708 16.6542 13.9125 16.0951 15.0208 14.9771C16.1292 13.859 16.6833 12.5125 16.6833 10.9375C16.6833 9.36249 16.1292 8.01596 15.0208 6.89791C13.9125 5.77985 12.5708 5.22083 10.9958 5.22083C9.40139 5.22083 8.04514 5.77985 6.92708 6.89791C5.80903 8.01596 5.25 9.36249 5.25 10.9375C5.25 12.5125 5.80903 13.859 6.92708 14.9771C8.04514 16.0951 9.40139 16.6542 10.9958 16.6542Z" fill="#DE836A"/>
+                </svg>                
+            </button>
+          </li>
+          <li>
+            <button class="ml-5">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.37082 25.6375C7.78749 25.6375 7.29165 25.4334 6.88332 25.025C6.47499 24.6167 6.27082 24.1209 6.27082 23.5375C6.27082 22.9542 6.47499 22.4584 6.88332 22.05C7.29165 21.6417 7.78749 21.4375 8.37082 21.4375C8.95415 21.4375 9.44999 21.6417 9.85832 22.05C10.2667 22.4584 10.4708 22.9542 10.4708 23.5375C10.4708 24.1209 10.2667 24.6167 9.85832 25.025C9.44999 25.4334 8.95415 25.6375 8.37082 25.6375ZM20.0375 25.6375C19.4542 25.6375 18.9583 25.4334 18.55 25.025C18.1417 24.6167 17.9375 24.1209 17.9375 23.5375C17.9375 22.9542 18.1417 22.4584 18.55 22.05C18.9583 21.6417 19.4542 21.4375 20.0375 21.4375C20.6208 21.4375 21.1167 21.6417 21.525 22.05C21.9333 22.4584 22.1375 22.9542 22.1375 23.5375C22.1375 24.1209 21.9333 24.6167 21.525 25.025C21.1167 25.4334 20.6208 25.6375 20.0375 25.6375ZM6.85415 6.38754L10.0625 13.0375H18.4625L22.1083 6.38754H6.85415ZM5.97915 4.63754H23.1583C23.6055 4.63754 23.9458 4.84171 24.1792 5.25004C24.4125 5.65837 24.4125 6.06671 24.1792 6.47504L20.2417 13.5625C20.0278 13.932 19.7507 14.2285 19.4104 14.4521C19.0701 14.6757 18.6958 14.7875 18.2875 14.7875H9.44999L7.81665 17.8209H22.1375V19.5709H8.07915C7.26249 19.5709 6.67429 19.2987 6.31457 18.7542C5.95485 18.2098 5.95971 17.5973 6.32915 16.9167L8.19582 13.475L3.76249 4.08337H1.48749V2.33337H4.89999L5.97915 4.63754ZM10.0625 13.0375H18.4625H10.0625Z" fill="#DE836A"/>
+                </svg>                
+            </button>
+          </li>
+        </ul>
+      </div>
+      <!-- Button Search & Cart: End -->
+    </div>
+    <!-- Mobile Menu: Start -->
+    <div class="md:hidden">
+      <ul class="absolute z-50 flex-col items-center hidden py-8 mt-10 space-y-6 sm:bg-white w-auto sm:self-center left-6 right-6 drop-shadow-md" id="menu">
+        <li class="md:mx-8 md2:mx-14 py-6 md:py-0">
+          <a href="#home" class="font-normal hover:text-brown active:text-brown focus:text-brown text-xl">Home</a>
+        </li>
+        <li class="md:mx-8 md2:mx-14 py-6 md:py-0">
+          <a href="#shop" class="font-normal hover:text-brown active:text-brown focus:text-brown text-xl">Shop</a>
+        </li>
+        <li class="md:mx-8 md2:mx-14 py-6 md:py-0">
+          <a href="#about" class="font-normal hover:text-brown active:text-brown focus:text-brown text-xl">About</a>
+        </li>
+        <li class="md:mx-8 md2:mx-14 py-6 md:py-0">
+          <a href="#rewards" class="font-normal hover:text-brown active:text-brown focus:text-brown text-xl">Rewards</a>
+        </li>
+        <li class="md:mx-8 md2:mx-14 py-6 md:py-0">
+          <!-- Button Search & Cart: Start -->
+          <div class="w-auto flex md:hidden">
+            <ul class="flex md:hidden items-center">
+              <li>
+                <button class="mr-5">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.2167 24.4708L15.5458 16.8C14.9625 17.3055 14.2819 17.6993 13.5042 17.9812C12.7264 18.2632 11.9 18.4042 11.025 18.4042C8.925 18.4042 7.14583 17.675 5.6875 16.2167C4.22917 14.7583 3.5 12.9986 3.5 10.9375C3.5 8.87638 4.22917 7.11666 5.6875 5.65833C7.14583 4.19999 8.91528 3.47083 10.9958 3.47083C13.0569 3.47083 14.8118 4.19999 16.2604 5.65833C17.709 7.11666 18.4333 8.87638 18.4333 10.9375C18.4333 11.7736 18.2972 12.5805 18.025 13.3583C17.7528 14.1361 17.3444 14.8653 16.8 15.5458L24.5 23.1875L23.2167 24.4708ZM10.9958 16.6542C12.5708 16.6542 13.9125 16.0951 15.0208 14.9771C16.1292 13.859 16.6833 12.5125 16.6833 10.9375C16.6833 9.36249 16.1292 8.01596 15.0208 6.89791C13.9125 5.77985 12.5708 5.22083 10.9958 5.22083C9.40139 5.22083 8.04514 5.77985 6.92708 6.89791C5.80903 8.01596 5.25 9.36249 5.25 10.9375C5.25 12.5125 5.80903 13.859 6.92708 14.9771C8.04514 16.0951 9.40139 16.6542 10.9958 16.6542Z" fill="#DE836A"/>
+                    </svg>                
+                </button>
+              </li>
+              <li>
+                <button class="ml-5">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.37082 25.6375C7.78749 25.6375 7.29165 25.4334 6.88332 25.025C6.47499 24.6167 6.27082 24.1209 6.27082 23.5375C6.27082 22.9542 6.47499 22.4584 6.88332 22.05C7.29165 21.6417 7.78749 21.4375 8.37082 21.4375C8.95415 21.4375 9.44999 21.6417 9.85832 22.05C10.2667 22.4584 10.4708 22.9542 10.4708 23.5375C10.4708 24.1209 10.2667 24.6167 9.85832 25.025C9.44999 25.4334 8.95415 25.6375 8.37082 25.6375ZM20.0375 25.6375C19.4542 25.6375 18.9583 25.4334 18.55 25.025C18.1417 24.6167 17.9375 24.1209 17.9375 23.5375C17.9375 22.9542 18.1417 22.4584 18.55 22.05C18.9583 21.6417 19.4542 21.4375 20.0375 21.4375C20.6208 21.4375 21.1167 21.6417 21.525 22.05C21.9333 22.4584 22.1375 22.9542 22.1375 23.5375C22.1375 24.1209 21.9333 24.6167 21.525 25.025C21.1167 25.4334 20.6208 25.6375 20.0375 25.6375ZM6.85415 6.38754L10.0625 13.0375H18.4625L22.1083 6.38754H6.85415ZM5.97915 4.63754H23.1583C23.6055 4.63754 23.9458 4.84171 24.1792 5.25004C24.4125 5.65837 24.4125 6.06671 24.1792 6.47504L20.2417 13.5625C20.0278 13.932 19.7507 14.2285 19.4104 14.4521C19.0701 14.6757 18.6958 14.7875 18.2875 14.7875H9.44999L7.81665 17.8209H22.1375V19.5709H8.07915C7.26249 19.5709 6.67429 19.2987 6.31457 18.7542C5.95485 18.2098 5.95971 17.5973 6.32915 16.9167L8.19582 13.475L3.76249 4.08337H1.48749V2.33337H4.89999L5.97915 4.63754ZM10.0625 13.0375H18.4625H10.0625Z" fill="#DE836A"/>
+                    </svg>                
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- Button Search & Cart: End -->
+        </li>
+        <li class="md:mx-8 md2:mx-14 py-6 md:py-0">
+          <!-- Copyright: Start -->
+            <p class="text-sm text-center px-24 md:px-0">
+              Copyright 2022 • All Rights Reserved <span class="text-brown font-semibold">Babe</span> by <span class="text-brown font-semibold">Miqzayu Official</span>
+            </p>
+          <!-- Copyright: End -->
+        </li>
+      </ul>  
+    </div>
+    <!-- Mobile Menu: End -->
+  </header>
+  <!-- Header: End -->
+
+  <!-- Hero: Start -->
+  <div class="pb-16 mt-340 md:mt-0 mb-10 md:mb-36" id="hero">
+    <div class="container p-3 mx-auto mt-7 md:mt-20">
+      <div class="flex flex-col-reverse items-center justify-center md:block">
+        <!-- Left item: Start -->
+        <div class="flex flex-col items-center md:items-start justify-center md:justify-between">
+          <h1 class="font-semibold md:font-bold text-center md:text-left text-3xl md:text-4xl text-green py-2">
+            THE ROOM YOU'VE <br class=""/> DREAMING.
+          </h1>
+          <h3 class="font-normal text-center md:text-left text-sm md:text-xl py-2">
+            Kami menyediakan furniture berkelas yang <br class=""/> membuat ruangan terasa homey 
+          </h3>
+          <button class="bg-brown px-6 py-4 mt-12">
+            <a href="#Get_Started" class="font-semibold text-sm text-white">GET STARTED</a>
+          </button>
+        </div>
+        <!-- Left item: End -->
+
+        <!-- Right item: Start -->
+        <div class="relative container m-0 p-0" style="left: 300px; top: -130px;">
+          <img src="/src/img/hero_product1.png" alt="" class="-translate-x-60 -translate-y-40 md:translate-x-340 md:-translate-y--230 animate-updown4 md:animate-updown1 opacity-0 w-97 h-167 md:w-220 md:h-380 absolute z-20 drop-shadow-xl"/>
+          <img src="/src/img/hero_product2.png" alt="" class="-translate-x-40 -translate-y-48 md:translate-x-530 md:-translate-y--270 animate-updown5 md:animate-updown2 opacity-0 w-97 h-167 md:w-220 md:h-380 absolute z-10 drop-shadow-xl"/>
+          <img src="/src/img/hero_product3.png" alt="" class="-translate-x-20 -translate-y-36 md:translate-x-720 md:-translate-y--170 animate-updown6 md:animate-updown3 opacity-0 w-97 h-167 md:w-220 md:h-380 absolute -z-10 drop-shadow-xl"/>
+        </div>
+        <!-- Right item: End -->
+      </div>
+    </div>
+  </div>
+  <!-- Hero: End -->
+
+
+  <!-- Browse The Room: Start -->
+  <section class="flex relative py-16 px-4" id="browse-the-room">
+    <div class="container mx-auto">
+      <div class="flex flex-row items-center justify-center mb-4">
+        <h3 class="text-2sm md:text-3xl text-brown text-center capitalize font-semibold">
+          browse the room <br class="" />that we designed for you
+        </h3>
+      </div>
+
+      <div class="grid grid-rows-1 grid-cols-8 gap-4">
+        <!-- Item Browse The Room 1: Start -->
+        <div class="relative col-span-8 row-span-1 md:col-span-4 md:row-span-2 card" style="height: 510px">
+          <div class="card-shadow">
+            <img src="./img/img_product1.png" alt="" class="w-full h-full object-cover overlay overflow-hidden"/>
+          </div>
+          <div class="overlay left-0 top-0 bottom-0 flex justify-start flex-col pl-56 md:pl-16 pt-8 md:pt-16 text-right md:text-left">
+            <h5 class="text-lg font-semibold">Bed Room</h5>
+            <span class="">22,094 items</span>
+          </div>
+          <a href="#details" class="stretched-link">
+            <!-- fake children -->
+          </a>
+        </div>
+        <!-- Item Browse The Room 1: END -->
+
+        <!-- Item Browse The Room 2: Start -->
+        <div class="relative col-span-8 row-span-1 md:col-span-2 md:row-span-1 card" style="height: 510px">
+          <div class="card-shadow">
+            <img src="./img/img_product2.png" alt="" class="w-full h-full object-cover overlay overflow-hidden"/>
+          </div>
+          <div class="overlay left-0 top-0 bottom-0 flex justify-start flex-col pl-56 md:pl-16 pt-8 md:pt-16 text-right md:text-left">
+            <h5 class="text-lg font-semibold">Children Room</h5>
+            <span class="">837 items</span>
+          </div>
+          <a href="#details" class="stretched-link">
+            <!-- fake children -->
+          </a>
+        </div>
+        <!-- Item Browse The Room 2: END -->
+
+        <!-- Item Browse The Room 3: Start -->
+        <div class="relative col-span-8 row-span-1 md:col-span-2 md:row-span-1 card" style="height: 510px">
+          <div class="card-shadow">
+            <img src="./img/img_product3.png" alt="" class="w-full h-full object-cover overlay overflow-hidden"/>
+          </div>
+          <div class="overlay left-0 top-0 bottom-0 flex justify-start flex-col pl-56 md:pl-16 pt-8 md:pt-16 text-right md:text-left">
+            <h5 class="text-lg font-semibold">Living Room</h5>
+            <span class="">18.309 items</span>
+          </div>
+          <a href="#details" class="stretched-link">
+            <!-- fake children -->
+          </a>
+        </div>
+        <!-- Item Browse The Room 3: END -->
+    </div>
+  </section>
+  <!-- Browse The Room: End -->
+
+
+  <!-- Clients: Start -->
+  <section class="container relative mx-auto py-20">
+    <div class="flex justify-center flex-wrap">
+      <div class="w-full flex-auto md:w-auto md:flex-initial px-4 md:px-6 my-4 md:my-0">
+        <img src="./img/partner-1.svg" alt="logo adobe" class="mx-auto" />
+      </div>
+      <div class="w-full flex-auto md:w-auto md:flex-initial px-4 md:px-6 my-4 md:my-0">
+        <img src="./img/partner-2.svg" alt="logo ikea" class="mx-auto" />
+      </div>
+      <div class="w-full flex-auto md:w-auto md:flex-initial px-4 md:px-6 my-4 md:my-0">
+        <img src="./img/partner-3.svg" alt="logo herman-miller" class="mx-auto" />
+      </div>
+      <div class="w-full flex-auto md:w-auto md:flex-initial px-4 md:px-6 my-4 md:my-0">
+        <img src="./img/partner-4.svg" alt="logo miele" class="mx-auto" />
+      </div>
+    </div>
+  </section>
+  <!-- Clients: End -->
+
+
+  <!-- Just Arrived: Start -->
+  <div class="flex flex-col pt-20 pb-2 px-4 ">
+    <div class="container mx-auto mb-4">
+      <div class="flex justify-center text-center mb-4">
+        <h3 class="text-3xl text-brown text-center font-semibold">
+          Just Arrived <br class="" />
+          This Summer For You
+        </h3>
+      </div>
+    </div>
+
+    <div class="carousel-wrapper relative overflow-hidden px-2">
+      <div class="container mx-auto"></div>
+
+      <div class="carousel flex flex-row m-auto">
+        <!-- Carousel Item: Start 1 -->
+        <div class="carousel-item px-2 card">
+          <div class="overflow-hidden card-shadow" style="width: 380px; height: 510px;">
+            <img src="./img/img_product4.png" alt="" class="w-full h-full object-cover object-center" />
+          </div>
+          <h5 class="text-lg font-semibold mt-4">Bankyu Minimax</h5>
+          <span class="">IDR 67.999</span>
+          <a href="#details.html" class="stretched-link"></a>
+            <!-- fake children -->
+          </a>
+        </div>
+        <!-- Carousel Item: End 1 -->
+
+        <!-- Carousel Item: Start 2 -->
+        <div class="carousel-item px-4 card">
+          <div class="overflow-hidden card-shadow" style="width: 380px; height: 510px;">
+            <img src="./img/img_product5.png" alt="" class="w-full h-full object-cover object-center" />
+          </div>
+          <h5 class="text-lg font-semibold mt-4">Buku Sidu Edition</h5>
+          <span class="">IDR 12.000.000</span>
+          <a href="#details.html" class="stretched-link"></a>
+            <!-- fake children -->
+          </a>
+        </div>
+        <!-- Carousel Item: End 2 -->
+
+        <!-- Carousel Item: Start 3 -->
+        <div class="carousel-item px-4 card">
+          <div class="overflow-hidden card-shadow" style="width: 380px; height: 510px;">
+            <img src="./img/img_product6.png" alt="" class="w-full h-full object-cover object-center" />
+          </div>
+          <h5 class="text-lg font-semibold mt-4">Racking Plants</h5>
+          <span class="">IDR 159.300</span>
+          <a href="#details.html" class="stretched-link"></a>
+            <!-- fake children -->
+          </a>
+        </div>
+        <!-- Carousel Item: End 3 -->
+
+        <!-- Carousel Item: Start 4 -->
+        <div class="carousel-item px-4 card">
+          <div class="overflow-hidden card-shadow" style="width: 380px; height: 510px;">
+            <img src="./img/img_product7.png" alt="" class="w-full h-full object-cover object-center" />
+          </div>
+          <h5 class="text-lg font-semibold mt-4">Watch Notes X</h5>
+          <span class="">IDR 7.600.999</span>
+          <a href="#details.html" class="stretched-link"></a>
+            <!-- fake children -->
+          </a>
+        </div>
+        <!-- Carousel Item: End 4 -->
+
+        <!-- Carousel Item: Start 3 -->
+        <div class="carousel-item px-4 card">
+          <div class="overflow-hidden card-shadow" style="width: 380px; height: 510px;">
+            <img src="./img/img_product6.png" alt="" class="w-full h-full object-cover object-center" />
+          </div>
+          <h5 class="text-lg font-semibold mt-4">Racking Plants</h5>
+          <span class="">IDR 159.300</span>
+          <a href="#details.html" class="stretched-link"></a>
+            <!-- fake children -->
+          </a>
+        </div>
+        <!-- Carousel Item: End 3 -->
+
+        <!-- Carousel Item: Start 2 -->
+        <div class="carousel-item px-4 card">
+          <div class="overflow-hidden card-shadow" style="width: 380px; height: 510px;">
+            <img src="./img/img_product5.png" alt="" class="w-full h-full object-cover object-center" />
+          </div>
+          <h5 class="text-lg font-semibold mt-4">Buku Sidu Edition</h5>
+          <span class="">IDR 12.000.000</span>
+          <a href="#details.html" class="stretched-link"></a>
+            <!-- fake children -->
+          </a>
+        </div>
+        <!-- Carousel Item: End 2 -->
+      </div>
+
+      <div class="controller py-4">
+        <div class="btn" id="prev">
+          <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M51.485 28.4201L37.905 42.0001L51.485 55.5801C52.85 56.9451 52.85 59.1501 51.485 60.5151C50.12 61.8801 47.915 61.8801 46.55 60.5151L30.485 44.4501C29.12 43.0851 29.12 40.8801 30.485 39.5151L46.55 23.4501C47.915 22.0851 50.12 22.0851 51.485 23.4501C52.815 24.8151 52.85 27.0551 51.485 28.4201Z" fill="#DE836A"/>
+          </svg>            
+        </div>
+        <div class="btn" id="next">
+          <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32.515 28.4201L46.095 42.0001L32.515 55.5801C31.15 56.9451 31.15 59.1501 32.515 60.5151C33.88 61.8801 36.085 61.8801 37.45 60.5151L53.515 44.4501C54.88 43.0851 54.88 40.8801 53.515 39.5151L37.45 23.4501C36.085 22.0851 33.88 22.0851 32.515 23.4501C31.185 24.8151 31.15 27.0551 32.515 28.4201Z" fill="#DE836A"/>
+          </svg>          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Just Arrived: End -->
+
+
+  <!-- Aside Menu: Start -->
+  <section class="container mx-auto py-0 md:py-12 mt-0 md:mt-16 px-4">
+    <div class="flex flex-col items-start md:items-center md:justify-center py-0 md:py-12 mt-0 md:mt-8 px-4">
+      <div class="flex justify-center mb-8">
+        <img src="./design/logo1.svg" width="101" alt="Babe Furniture Adalah sebuah website yang menjual barang-barang kece"/>
+      </div>
+
+      <aside class="container mx-auto">
+        <div class="flex flex-col md:flex-wrap md:flex-row md:space-x-4 justify-center">
+          <!-- Item Aside Menu 1: Start -->
+          <div class="w-full md:w-2/12 mb-4 md:mb-0">
+            <h5 class="text-brown text-xl font-semibold mb-2 relative">
+              Overview
+            </h5>
+            <ul class="h-auto">
+              <li>
+                <a href="#" class="hover:underline text-lg py-1 block">Shipping</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline text-lg py-1 block">Refund</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline text-lg py-1 block">Promotion</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Item Aside Menu 1: End -->
+
+          <!-- Item Aside Menu 2: Start -->
+          <div class="w-full md:w-2/12 mb-4 md:mb-0">
+            <h5 class="text-brown text-xl font-semibold mb-2 relative">
+              Company
+            </h5>
+            <ul class="h-auto">
+              <li>
+                <a href="#" class="hover:underline text-lg py-1 block">About</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline text-lg py-1 block">Career</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline text-lg py-1 block">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Item Aside Menu 2: End -->
+
+          <!-- Item Aside Menu 3: Start -->
+          <div class="w-full md:w-2/12 mb-4 md:mb-0">
+            <h5 class="text-brown text-xl font-semibold mb-2 relative">
+              Explore
+            </h5>
+            <ul class="h-auto">
+              <li>
+                <a href="#" class="hover:underline text-lg py-1 block">Terms & Conds</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline text-lg py-1 block">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline text-lg py-1 block">For Developer</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Item Aside Menu 3: End -->
+
+          <!-- Item Aside Menu 4: Start -->
+          <div class="w-full md:w-3/12 mb-4 md:mb-0">
+            <h5 class="text-brown text-xl font-semibold mb-2 relative">
+              Special Letter 
+            </h5>
+            <form action="#">
+              <label class="relative w-full">
+                <input type="text" class="bg-gray-100 py-3 px-5 w-full focus:outline-none" placeholder="Your email adress" />
+                <button class="bg-brown absolute right-0 p-3 text-white">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.5 23.3333V4.66663L25.6667 14L3.5 23.3333ZM5.25 20.6208L21.1167 14L5.25 7.29163V12.1916L12.3083 14L5.25 15.75V20.6208ZM5.25 20.6208V7.29163V15.75V20.6208Z" fill="white"/>
+                    </svg>                    
+                </button>
+              </label>
+            </form>
+          </div>
+          <!-- Item Aside Menu 4: End -->
+        </div>
+      </aside>
+    </div>
+  </section>
+  <!-- Aside Menu: End -->
+
+
+  <!-- Footer: Start -->
+  <footer class="flex justify-center text-center px-4 py-8 mb-6">
+    <p class="text-sm px-24 md:px-0">
+      Copyright 2022 • All Rights Reserved <span class="text-brown font-semibold">Babe</span> by <span class="text-brown font-semibold">Miqzayu Official</span>
+    </p>
+  </footer>
+  <!-- Footer: End -->
+
+  <!-- Script: Start -->
+  <script src="./js/script.js"></script>
+  <!-- Script: End -->
+</body>
+</html>

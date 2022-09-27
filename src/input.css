@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .overlay {
+    @apply absolute;
+  }
+
+  .overlay * {
+    @apply transition-all duration-200;
+  }
+
+  .overlay.hoverable > * {
+    @apply opacity-0;
+  }
+
+  .overlay.hoverable:hover > * {
+    @apply opacity-100;
+  }
+
+  .overlay .video {
+    @apply absolute transform bg-blue-200 bg-no-repeat bg-center rounded-full flex items-center justify-center;
+    background-image: url("../images/design/icon-play.svg");
+    top: 50%;
+    left: 50%;
+  }
+
+  /* card */
+  .card .card-shadow {
+    @apply transition duration-300 shadow-none h-full;
+  }
+
+  .card:hover .card-shadow {
+    @apply shadow-lg;
+  }
+}
+
+@layer utilities {
+  .stretched-link {
+    @apply absolute inset-0 z-10 cursor-pointer;
+  }
+} 
+  /* Mobile Device*/
+.hamburger {
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 3px;
+  background: #DE836A;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+
+/* Carousel */
+.carousel-item {
+  transition: all 1s ease-in-out;
+}
+
+
+/* Controller */
+.controller {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+.btn svg {
+  fill: #DE836A;
+}
+
+.btn svg:hover {
+  fill: #2a2a2a;
+}
